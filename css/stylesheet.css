@@ -1,6 +1,8 @@
 /* GENERAL STYLING */
 body {
     margin: 0%;
+    opacity: 1;
+    transition: 3s opacity;
 }
 
 h1 {
