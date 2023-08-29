@@ -12,9 +12,10 @@
         <!-- NAVBAR -->
         <div class="navbar">
             <a class="active" href="#home">HOME</a>
+            <a href="#slideshow">SLIDESHOW</a>
             <a href="#about">ABOUT</a>
             <a href="#github">GITHUB</a>
-            <a href="#contact">CONTACT</a>
+            <a onclick="openForm()" class="contact">CONTACT</a>
         </div>
         <!-- /NAVBAR -->
 
@@ -60,22 +61,22 @@
                     </div>
                     <!-- 2 of 6 -->
                     <div class="myslides fade">
-                        <img class="slideshow_images" src="" alt="">
+                        <img class="slideshow_images" src="img/HTML_CSS_and_JavaScript.jpeg" alt="">
                         <div class="text">I can assist you with your project!</div>
                     </div>
                     <!-- 3 of 6 -->
                     <div class="myslides fade">
-                        <img class="slideshow_images" src="" alt="">
+                        <img class="slideshow_images" src="img/SQL_and_Database.jpg" alt="">
                         <div class="text">I can assist you with your project!</div>
                     </div>
                     <!-- 4 of 6 -->
                     <div class="myslides fade">
-                        <img class="slideshow_images" src="" alt="">
+                        <img class="slideshow_images" src="img/C_Sharp_and_Dot_NET.png" alt="">
                         <div class="text">I can assist you with your project!</div>
                     </div>
                     <!-- 5 of 6 -->
                     <div class="myslides fade">
-                        <img class="slideshow_images" src="" alt="">
+                        <img class="slideshow_images" src="img/Python.png" alt="">
                         <div class="text">I can assist you with your project!</div>
                     </div>
                     <!-- 6 of 6 -->
@@ -149,11 +150,14 @@
                     <label for="name"><b>Name</b></label>
                         <input type="text" placeholder="Type your name here" name="name" required>
                     <label for="phone"><b>Phone</b></label>
-                        <input type="text" placeholder="Type your name here" name="name" required>
+                        <input type="text" placeholder="Type your phone number here" name="name" required>
                     <label for="email"><b>Email</b></label>
-                        <input type="text" placeholder="Type your name here" name="name" required>
+                        <input type="text" placeholder="Type your email here" name="name" required>
                     <label for="message"><b>Message</b></label>
-                        <input type="text" placeholder="Type your name here" name="name" required>
+                        <input type="text" placeholder="Type a message here" name="name" required>
+
+                    <button type="submit" class="btn">SUBMIT</button>
+                    <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
                 </form>
             </div>
         </div>
