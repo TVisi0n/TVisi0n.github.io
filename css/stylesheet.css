@@ -171,6 +171,9 @@ footer {
 /* END OF VIDEO STYLING */
 
 /* SLIDESHOW STYLING */
+.pointer {
+    cursor: pointer;
+}
 
 #slideshow_background {
     background: rgba(255, 255, 255, 0.35);
