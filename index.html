@@ -4,257 +4,36 @@
 		<title>Tanner's Portfolio</title>
         <meta name="viewport" content="width=device-width" />
 		<meta charset="utf-8">
-        <link rel="stylesheet" type="text/css" href="./css/stylesheet.css">
+        <link rel="stylesheet" type="text/css" href="./css/newstylesheet.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
         <script src="js/main.js"></script>
 	</head>
 	<body class="background">
-	
         <!-- NAVBAR -->
         <div class="navbar">
-            <a class="active" href="#home">HOME</a>
-            <a href="#slideshow">SLIDESHOW</a>
-            <a href="#about">ABOUT</a>
-            <a href="#github">GITHUB</a>
-            <a href="#js">JAVASCRIPT</a>
-            <a href="#python">PYTHON</a>
-            <a href="#c_sharp">C SHARP</a>
-            <a href="#resume">RESUME</a>
-            <a onclick="openForm()" class="contact">CONTACT</a>
+            <a href="#Home">HOME</a>
+            <a href="#About">ABOUT</a>
+            <a href="#Portfolio">PORTFOLIO</a>
+            <a href="Contact">CONTACT</a>
+            <a href="Resume">RESUME</a>
         </div>
         <!-- /NAVBAR -->
 
         <br>
         <br>
 
-        <!-- BACKGROUND VIDEO -->
-        <div id="home">
-            <video autoplay muted loop id="typing_video">
-                <source src="./img/video/Typing.mp4" type="video/mp4">
-                Your browser does not support this video.
-            </video>
-        </div>
-        <!-- /BACKGROUND VIDEO -->
-
-        <!-- VIDEO TEXT -->
-        <div class="video_text">
-            <h1 class="white-text">Tanner Vasquez's Portfolio</h1>
-            <strong>
-                <p class="center">
-                    <q> Every great developer you know
-                        <br>got there by solving problems they were unqualified to solve
-                        <br>until they actually did it.
-                    </q>
-                    <br> -Partick McKenzie
-                    <br>
-                    <br> My name is Tanner Vaquez. Welcome to my portfolio website. On it, I will tell you about my background and experience.
-                    <br>
-                    <br> Thank you for stopping by and enjoy!
-                </p>
-            </strong>
-        </div>
-        <!-- /VIDEO TEXT -->
-
-        <!-- SLIDESHOW -->
-        <div id="slideshow">
-            <div id="slideshow_background">
-                <div id="slideshow_container">
-                    <!-- 1 of 6 -->
-                    <div class="myslides fade">
-                        <img class="slideshow_images" src="img/selfportrait.jpg" alt="Picture of myself">
-                        <div class="text">I can assist you with your project!</div>
-                    </div>
-                    <!-- 2 of 6 -->
-                    <div class="myslides fade">
-                        <img class="slideshow_images" src="img/HTML_CSS_and_JavaScript.jpeg" alt="Front End">
-                        <div class="text">As a full-stack software developer, I'm trained in: HTML, CSS, JavaScript,</div>
-                    </div>
-                    <!-- 3 of 6 -->
-                    <div class="myslides fade">
-                        <img class="slideshow_images" src="img/C_Sharp_and_Dot_NET.png" alt="C# & .NET">
-                        <div class="text">C#, .NET framework, ASP.NET, MVC,</div>
-                    </div>
-                    <!-- 4 of 6 -->
-                    <div class="myslides fade">
-                        <img class="slideshow_images" src="img/SQL_and_Database.jpg" alt="SQL">
-                        <div class="text">back end development, databases and SQL.</div>
-                    </div>
-                    <!-- 5 of 6 -->
-                    <div class="myslides fade">
-                        <img class="slideshow_images" src="img/Python.png" alt="python">
-                        <div class="text">I'm also trained in the popular language, Python.</div>
-                    </div>
-                    <!-- 6 of 6 -->
-                    <div class="myslides fade">
-                        <img class="slideshow_images pointer" src="img/code.jpg" alt="code" onclick="openForm()">
-                        <div class="text">Contact Me Now!</div>
-                    </div>
-                    <!-- Prev and Next Buttons -->
-                    <a class="previous" onclick="plusSlides(-1)">&#10094;</a>
-                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                </div>
-                <br>
-
-                <!-- Slideshow Dots -->
-                <div style="text-align: center;">
-                    <span class="dot" onclick="currentSlide(1)"></span>
-                    <span class="dot" onclick="currentSlide(2)"></span>
-                    <span class="dot" onclick="currentSlide(3)"></span>
-                    <span class="dot" onclick="currentSlide(4)"></span>
-                    <span class="dot" onclick="currentSlide(5)"></span>
-                    <span class="dot" onclick="currentSlide(6)"></span>
-                </div>
+        <!-- MAIN PHOTO W/ TEXT -->
+        <div class="main-section">
+            <div class="text-container">
+                <p class="main-text">I'm Tanner Vasquez.</p>
+                <p class="main-text">A Full Stack Developer</p>
+                <p class="secondary-text">ready to help.</p>
             </div>
         </div>
-        <!-- SLIDESHOW -->
-
-        <!-- ABOUT SECTION -->
-        <div class="row" id="about">
-            <!-- left Column -->
-            <div class="column_2">
-                <img src="./img/coding1.jpg" alt="code_image">
-            </div>
-            <!-- right Column -->
-            <div class="column_1">
-                <h1>About</h1>
-                <p>
-                    I am a software developer who loves coding! Coding is my passion and I continue to grow everyday.
-                    <br>
-                    <br> I am a graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>'s Software Developer Boot Camp, and trained and experienced in the following web and programming languages: HTML, CSS, Javascript, SQL, C#, and more.
-                    <br>
-                    <br>I am a full stack developer and would love to work with you on your project. <a onclick="openForm()" class="contact">Contact</a> me below!
-                </p>
-            </div>
-        </div>
-        <!-- /ABOUT SECTION -->
-
-        <!-- GITHUB SECTION -->
-        <div class="row" id="github">
-            <!-- Left Column -->
-            <div class="column_1">
-                <h1>Github</h1>
-                <p>
-                    You can view my coding projects on my GitHub profile here:
-                    <br>
-                    <p class="center"><a href="https://github.com/TVisi0n" target="_blank">Tanner Vasquez's GitHub</a></p>
-                </p>
-            </div>
-            <!-- Right Column -->
-            <div class="column_2">
-                <a href="https://github.com/TVisi0n" target="_blank"><img src="./img/GitHub.png" alt="GitHub Logo"></a>
-            </div>
-        </div>
-        <!-- /GITHUB SECTION -->
-
-        <!-- JS SECTION -->
-        <div class="row" id="js">
-            <!-- Left Column -->
-            <div class="column_2">
-                <h1>JavaScript Projects</h1>
-                <p>
-                    These are some of my JavaScript Projects:
-                </p>
-            </div>
-            <!-- Right Column -->
-            <div class="column_1">
-                <a href="https://github.com/TVisi0n/JavaScript-Projects/tree/main/Basic%20JavaScript%20Projects/TicTacToe" target="_blank" ><p class="center">Tic Tac Toe Game</p></a>
-                <br>
-                <a href="https://github.com/TVisi0n/JavaScript-Projects/tree/main/Basic%20JavaScript%20Projects/Pizza_Project" target="_blank"><p class="center">Basic Pizza Ordering Page</p></a>
-                <br>
-                <a href="https://github.com/TVisi0n/JavaScript-Projects/tree/main/Basic%20JavaScript%20Projects/Calculator" target="_blank"><p class="center">Calculator</p></a>
-                <br>
-                <p class="center">Here is the link to my entire Python Projects <a href="https://github.com/TVisi0n/Python-Projects" target="_blank">Repository</a></p>
-            </div>
-        </div>
-        <!-- /JS SECTION -->
-
-        <!-- PYTHON SECTION -->
-        <div class="row" id="python">
-            <!-- Left Column -->
-            <div class="column_1">
-                <h1>Python Projects</h1>
-                <p>
-                    These are some of my Python Projects that use Tkinter, SQLite3, and Django:
-                </p>
-            </div>
-            <!-- Right Column -->
-            <div class="column_2">
-                <a href="https://github.com/TVisi0n/Python-Projects/tree/main/django/Django_Checkbook_Project" target="_blank" ><p class="center">Django Checkbook Project</p></a>
-                <br>
-                <a href="https://github.com/TVisi0n/Python-Projects/blob/main/file_transfer.py" target="_blank"><p class="center">Tkinter File Transfer GUI</p></a>
-                <br>
-                <a href="https://github.com/TVisi0n/Python-Projects/blob/main/web_page_generator.py" target="_blank"><p class="center">Tkinter File Transfer GUI</p></a>
-                <br>
-                <p class="center">Here is the link to my entire JavaScript Projects <a href="https://github.com/TVisi0n/Python-Projects" target="_blank">Repository</a></p>
-            </div>
-        </div>
-        <!-- /PYTHON SECTION -->
-
-        <!-- C# & .NET SECTION -->
-        <div class="row" id="c_sharp">
-            <!-- Left Column -->
-            <div class="column_2">
-                <h1>C# & .NET Framework Projects</h1>
-                <p>
-                    Here you can find my projects that use C# and .NET Framework:
-                </p>
-            </div>
-            <!-- Right Column -->
-            <div class="column_1">
-                <a href="https://github.com/TVisi0n/.NET-and-C-Sharp/tree/main/CarInsurance2" target="_blank" ><p class="center">Car Insurance</p></a>
-                <br>
-                <a href="https://github.com/TVisi0n/.NET-and-C-Sharp/tree/main/StudentDB" target="_blank"><p class="center">Student Database</p></a>
-                <br>
-                <a href="https://github.com/TVisi0n/.NET-and-C-Sharp/tree/main/FileTransfer" target="_blank"><p class="center">File Transfer</p></a>
-                <br>
-                <p class="center">Here is the link to my entire C# and .NET Framework Projects <a href="https://github.com/TVisi0n/.NET-and-C-Sharp" target="_blank">Repository</a></p>
-            </div>
-        </div>
-        <!-- C# & .NET SECTION -->
-
-        <!-- RESUME SECTION -->
-        <div class="row" id="resume">
-            <!-- Left Column -->
-            <div class="column_1">
-                <h1>My Resume</h1>
-                <a href="https://docs.google.com/document/d/1tHGznSAkoqeXMeFhAJVmzkRIQv8bbTulYW0PzJ7w2Wo/edit?usp=sharing" target="_blank"><p class="center">Tanner Vasquez's Resume</p></a>
-            </div>
-            <!-- Right Column -->
-            <div class="column_2">
-                <h1>My LinkedIn Profile</h1>
-                <a href="https://www.linkedin.com/in/tannervasquez/" target="_blank"><p class="center">Tanner Vasquez on LinkedIn</p></a>
-            </div>
-        </div>
-        <!-- /RESUME SECTION -->
         
-        <!-- CONTACT SECTION -->
-        <div id="contact">
-            <button onclick="openForm()" class="pop_up_button">CONTACT</button>
-            <div class="form-popup" id="myForm">
-                <form action="https://formspree.io/f/mleyjwgl" method="POST" class="form-container">
-                    <h1>Contact</h1>
-                    <label for="name"><b>Name</b></label>
-                        <input type="text" placeholder="Type your name here" name="name" required>
-                    <label for="phone"><b>Phone</b></label>
-                        <input type="text" placeholder="Type your phone number here" name="name" required>
-                    <label for="email"><b>Email</b></label>
-                        <input type="text" placeholder="Type your email here" name="name" required>
-                    <label for="message"><b>Message</b></label>
-                        <input type="text" placeholder="Type a message here" name="name" required>
-
-                    <button type="submit" class="btn">SUBMIT</button>
-                    <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
-                </form>
-            </div>
-        </div>
-        <!-- /CONTACT SECTION -->
-
-        <!-- FOOTER SECTION -->
-        <footer>
-            <p>
-                <p class="center">&copy Prosper Consulting Inc., <a href="https://www.learncodinganywhere.com/" target="_blank">The Tech Academy</a></p>
-                <br>
-            </p>
-        </footer>
-        <!-- /FOOTER SECTION -->
+        <!-- /MAIN PHOTO W/ TEXT -->
     </body>
 </html>

@@ -1,0 +1,74 @@
+/* COLOR PALLETE 
+
+Plat: #DBDBD
+Silver: #B0B5B3
+Outer Space: #474747
+Giants Orange: #F46036
+Midnight Blue: #18206F
+
+/COLOR PALLETE */
+
+body {
+    background-color: #DBDBDB;
+}
+
+/* NAVBAR */
+
+.navbar {
+    float: right;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: black;
+    padding-right: 35px;
+    font-size: 22px;
+    font-family: "IBM Plex Sans", sans-serif;
+}
+
+.navbar a:hover {
+    cursor: pointer;
+    color: #f46036;
+}
+
+/* NAVBAR */
+
+/* MAIN PHOTO W/ TEXT */
+.main-section {
+    display: flex;
+    justify-content: right;
+    padding-right: 500px;
+    padding-top: 85px;
+}
+
+.text-container {
+    width: 400px;
+    height: 600px;
+    background-image: url("../img/selfportrait.JPG");
+    background-size: contain;
+}
+
+
+.main-text {
+    font-family: "Alfa Slab One", serif;
+    color: #474747;
+    margin: 0px;
+    font-size: 40px;
+    position: relative;
+    width: 500px;
+    top: 25%;
+    right: 110%;
+}
+
+.secondary-text {
+    font-family: "Alfa Slab One", serif;
+    color: #f46036;
+    margin: 0px;
+    font-size: 40px;
+    position: relative;
+    top: 25%;
+    right: 110%;
+}
+
+
+/* MAIN PHOTO W/ TEXT */
